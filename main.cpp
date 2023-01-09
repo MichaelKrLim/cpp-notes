@@ -23,3 +23,9 @@ std::istream & operator >> (std::istream & in, join & name)
  std::vector<join> answer(std::istream_iterator<join>{std::cin},{});
  
 ---------------------------------------------------------------------
+
+you may use copy to a vecor's output stream to output
+   
+std::copy(answer.begin(),answer.end(),std::ostream_iterator<join>{std::cout});
+
+---------------------------------------------------------------------
